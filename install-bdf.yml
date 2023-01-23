@@ -16,10 +16,10 @@
   - name: run BDF installer
     command: sh lnx-bdf/installer
   - name: CLEAN UP AFTER INSTALLER BELOW
-    command: rm bdconfigure
+    command: rm lnx-bdf/bdconfigure
   - name: delete file 2
-    command: rm installer
+    command: rm lnx-bdf/installer
   - name: delete file 3
-    command: rm installer.xml
+    command: rm lnx-bdf/installer.xml
   - name: delete folder
-    command: rm -rf linux-amd64
+    command: rm -rf lnx-bdf/linux-amd64
