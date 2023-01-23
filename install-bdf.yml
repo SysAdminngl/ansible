@@ -13,6 +13,8 @@
     args:
       chdir: "{{ destination_folder }}"
     
+  - name: Grant execute on BDF installer
+    command: chmod +x /root/lnx-bdf-installer
   - name: run BDF installer
     command: sh lnx-bdf/installer
   - name: CLEAN UP AFTER INSTALLER BELOW
